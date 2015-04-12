@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+var thaidict = require("../")
+
+var proc = process.argv.slice(2);
+if(proc.length>1){
+	thaidict.init(function(){
+		proc.forEach(function(arg) {
+			console.log(JSON.stringify(thaidict.search(arg)));
+		});
+	});
+}else{
+  console.log("Usage : thaidict \"word\"\nMore infomation : https://github.com/pureexe/node-thaidict");
+}
+
