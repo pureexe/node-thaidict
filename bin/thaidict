@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 var thaidict = require("../")
-
 var proc = process.argv.slice(2);
-if(proc.length>1){
+if(proc.length>=1){
 	thaidict.init(function(){
 		proc.forEach(function(arg) {
 			console.log(JSON.stringify(thaidict.search(arg)));

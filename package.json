@@ -1,45 +1,32 @@
 {
   "name": "thaidict",
+  "version": "0.0.2",
   "description": "thaidict is Thai-English dictionary baseon lexitron",
-  "version": "0.0.1",
-  "homepage": "https://github.com/pureexe/node-thaidict",
-  "author": {
-    "name": "Pakkapon Phongthawee",
-    "email": "me@pureapp.in.th"
-  },
-  "contributors": [],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/pureexe/node-thaidict.git"
-  },
-  "bugs": {
-    "url": "https://github.com/pureexe/node-thaidict/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/pureexe/node-thaidict/blob/master/LICENSE"
-    }
-  ],
   "main": "lib/thaidict.js",
   "bin": {
-    "wordcut": "./bin/thaidict"
+    "thaidict": "./bin/thaidict"
   },
   "files": [
     "data/*.json",
     "lib/*.js",
     "bin"
   ],
-  "engines": {
-    "node": ">= 0.10.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pureexe/node-thaidict.git"
   },
   "keywords": [
     "translate",
     "thai-english",
     "english-thai",
     "dictionary",
-    "thaidict"
+    "thaidict",
+    "lexitron"
   ],
-  "dependencies": {
-  }
+  "author": "Pakkapon Phongthawee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pureexe/node-thaidict/issues"
+  },
+  "homepage": "https://github.com/pureexe/node-thaidict"
 }
